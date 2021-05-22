@@ -1,0 +1,46 @@
+*{
+    font-family: 'Press Start 2P', cursive;
+}
+#tR{
+    float:right;
+}
+
+#tL{
+    float: left;
+}
+
+nav{
+    display: block;
+    background-color: blueviolet;
+    display: inline-block;
+    width: 97vw;
+    border: 4px solid yellow;
+    border-radius: 6px;
+    margin: 7px;
+}
+
+body{
+    background-color: gold;
+}
+
+#Qbody{
+    text-align: center;
+    padding: 13vh;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h4{
+    padding: 11px 9px 11px 9px;
+}
+
+button{
+    background-color: purple;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    
+}
