@@ -1,5 +1,5 @@
 var startBtn = document.querySelector("#startbtn");
-var countTimer = document.querySelector("#timer");
+var countTimer = document.querySelector("#timer"); //🙈
 var heading = document.querySelector(".heading");
 var timer = document.querySelector(".timer-bar");
 var quiz = document.querySelector("#questions");
@@ -47,6 +47,7 @@ function startQuiz() {
   startTimer();
   renderQuestion();
 }
+//✌️
 function renderQuestion() {
   var currentQuestion = questions[questionIndex];
   qTitle.textContent = currentQuestion.Q;
@@ -58,23 +59,25 @@ function renderQuestion() {
     qAnswers.append(btn);
   }
 }
+//👌
 qAnswers.addEventListener("click", function (e) {
   var currentQuestion = questions[questionIndex];
   if (!e.target.matches("button")) return;
   var val = e.target.textContent;
-  if (currentQuestion.correctAnswer === val) {
+  if (currentQuestion.correctAnswer == val) {
     seconds += 5;
   }
   else {
-    seconds -= 15;
+    seconds -=15;
   }
   questionIndex++;
-  if (questionIndex === questions.length) {
+  if (questionIndex == questions.length) {
     endGame();
   } else {
     renderQuestion();
   }
 });
+//👍🏽
 function startTimer() {
   timeInterval = setInterval(function () {
     if (seconds > 1) {
@@ -90,7 +93,7 @@ function startTimer() {
   }, 1000);
 }
 function endGame() {
-   
+   //👁👄👁
 }
 
-//local storage 
+//local storage ☹️😒😩
