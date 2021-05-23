@@ -1,7 +1,9 @@
 *{
     font-family: 'Press Start 2P', cursive;
 }
-#tR{
+#timer{
+    color: blueviolet;
+    text-align: right;
     float:right;
 }
 
@@ -23,14 +25,17 @@ body{
     background-color: gold;
 }
 
-#Qbody{
+.heading, #questions , #answers{
     text-align: center;
     padding: 13vh;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+
+h1, h2, h3 {
+    text-align: center;
+    color: blueviolet;
+    font-size: xx-large;
+    padding: 15px 32px;
 }
 
 h4{
@@ -38,9 +43,36 @@ h4{
 }
 
 button{
-    background-color: purple;
-    color: black;
-    border: none;
+    background-color: blueviolet;
+    color: gold;
+    display: inline-grid;
     border-radius: 6px;
-    
+    font-size: 30px;
+    padding: 24px 32px 24px 32px;
+    margin: 33px;
+
+}
+
+#answers {
+    text-align: center;
+    color:black;
+    padding: 15px 32px;
+    display: inline-grid;
+    font-size: 24px;
+    box-shadow: 10px;
+
+}
+
+
+
+button:hover {
+    transition-duration: 0.3s ;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
 }
