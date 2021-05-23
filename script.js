@@ -12,6 +12,7 @@ var questionIndex = 0;
 var seconds = 60;
 var timeInterval;
 
+
 var questions = [
   
   {
