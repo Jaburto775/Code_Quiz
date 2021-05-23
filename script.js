@@ -45,10 +45,10 @@ function startQuiz() {
   timer.style.display = "block";
   quiz.style.display = "block";
   startTimer();
-  renderQuestion();
+  makeQuestion();
 }
 //✌️
-function renderQuestion() {
+function makeQuestion() {
   var currentQuestion = questions[questionIndex];
   qTitle.textContent = currentQuestion.Q;
   qAnswers.innerHTML = "";
@@ -74,7 +74,7 @@ qAnswers.addEventListener("click", function (e) {
   if (questionIndex == questions.length) {
     gameOver();
   } else {
-    renderQuestion();
+    makeQuestion();
   }
 });
 //👍🏽
@@ -93,7 +93,10 @@ function startTimer() {
   }, 1000);
 }
 function gameOver() {
-   //👁👄👁
+   startQuiz();
+   
+    //👁👄👁
+
 }
 
-//local storage ☹️😒😩
+//local storage ☹😩
