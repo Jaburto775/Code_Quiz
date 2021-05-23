@@ -5,7 +5,7 @@ var timer = document.querySelector(".timer-bar");
 var quiz = document.querySelector("#questions");
 var qTitle = document.querySelector("#questionTitle");
 var qAnswers = document.querySelector("#answers");
-var leaderboard = document.querySelector("#leaderboard");
+var leader = document.querySelector("#leaderboard");
 var highScore = 0;
 var hidden = document.querySelector(".hide");
 var questionIndex = 0;
@@ -72,7 +72,7 @@ qAnswers.addEventListener("click", function (e) {
   }
   questionIndex++;
   if (questionIndex == questions.length) {
-    endGame();
+    gameOver();
   } else {
     renderQuestion();
   }
@@ -88,11 +88,11 @@ function startTimer() {
       seconds--;
     } else {
       countTimer.textContent = "";
-      endGame();
+      gameOver();
     }
   }, 1000);
 }
-function endGame() {
+function gameOver() {
    //👁👄👁
 }
 
